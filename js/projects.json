@@ -25,6 +25,11 @@
 			
 			"name":"Guajaba Jam",
 			"link":"pages/guayabajam.html"
+		},
+		{
+			
+			"name":"Foward",
+			"link":"pages/foward.html"
 		}
 	]
 }
