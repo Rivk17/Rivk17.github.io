@@ -1,0 +1,38 @@
+//
+// 
+//
+.social {
+	background-color: $white;
+	box-shadow: none;
+	margin-top: 20px;
+	width: 100%;
+	@media (min-width: $desktop) {
+		margin-top: -30px;
+		padding: 0;
+	}
+	h3 {
+		@include font-size(30);
+		margin-top: 30px;
+		text-align: center;
+		@media (min-width: $desktop) {
+    		@include font-size(40);
+  		}
+	}
+	.social-nav {
+	 	li {
+			float: left;
+		}
+	}
+}
+
+.visual-director {
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid $white;
+	height: 0;
+	left: 0;
+	margin:-48px auto;
+	position: absolute;
+	right: 0;
+	width: 0;
+}	

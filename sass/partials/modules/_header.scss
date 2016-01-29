@@ -1,0 +1,70 @@
+//
+// header rules
+//
+header {
+	padding-top: 80px;
+	@media (min-width: $tablet) {
+		padding-top: 150px;
+	}
+	h2 {
+		@include font-size(50);
+		@extend %headlightners;
+		margin-top: 0;
+		text-shadow: 10px -15px 8px $black;
+		@media (min-width: $desktop) {
+			@include font-size(80);
+			width: 100%;
+		}
+	}
+}
+
+.main-header {
+	padding: 0;
+	@media (min-width: $tablet) {
+		padding-top: 80px;
+	}
+	@media (min-width: $desktop) {
+		padding: 100px;
+	}
+	h1 {
+		margin: 0 auto;
+		text-align: center;
+		text-shadow: 10px -15px 8px $black;
+		width: 150px;
+		@media (min-width: $desktop) {
+			width: 240px;
+		}
+	}
+	span {
+		@include font-size(50);
+		float: left;
+		margin:0 20px;
+		width: 35px;
+		@media (min-width: $desktop) {
+			@include font-size(80);
+			margin:0 40px;
+			line-height: 10rem;
+		}
+		&:last-child {
+			padding-top: 60px; 
+		}
+	}
+}
+
+.gallery-header {
+ 	padding: 0;
+}
+
+.welcoming-section {
+	height: 100%;
+	left: 0;
+	padding: 0;
+	position: fixed;
+	width: 100%;
+	z-index: -5;
+}
+
+.index-welcome {
+	background: url(../images/background.jpg) no-repeat top center;
+	background-size: cover;
+}

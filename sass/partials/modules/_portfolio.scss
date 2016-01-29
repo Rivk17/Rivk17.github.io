@@ -1,0 +1,97 @@
+//
+// Style for the portfolio sections
+//
+.portfolio {
+	background-color: $black;
+	.title {
+		@media (min-width: $desktop) {
+			float:left;
+		}
+	}
+}
+
+.projects-overview {
+	width: 100%;
+ 	@media (min-width: $desktop) {		
+ 		float: right;
+ 		width: 75%;
+ 	}
+ 	@media (min-width: 1500px) {
+		width: 80%;
+ 	}
+}
+
+.project {
+	@include font-size(60);
+	display: block;
+	height: 300px;
+	margin: 10px auto;
+	position: relative;
+	width: 90%;
+	@media (min-width: $tablet) {
+		float: left;
+		margin: 20px 1%;
+		width: 48%;
+	}
+	@media (min-width: $desktop) {
+		&:hover {
+			div {
+				-webkit-filter: blur(10px);
+	 			filter: blur(10px);
+	 			transition:0.5s;
+			}
+			h4 {
+				display: block;
+				text-shadow: 10px -15px 5px $black;
+				transition:0.5s;
+			}
+	 	}	
+	}
+	div {
+		background-size: cover;
+		height: 100%;
+		transition:0.5s;
+ 		width: 100%;
+	}
+	h4 {
+		display: none;
+		@media (min-width: $tablet) {
+			left: 50%;
+			margin-top: -290px;
+			position: absolute;
+			text-align: center;
+			-moz-transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
+			transform: translate(-50%, 0);
+			transition:0.5s;
+		}
+	}
+}
+
+.project:nth-child(2) div, .project:nth-child(4) div {
+	@media (min-width: $tablet) {
+ 		margin-top: 80px;
+ 	}
+ }
+/*
+background images for every project
+*/
+.project:first-child div {
+ 	background: url(../images/projects/ourheritage.png) no-repeat top center;
+}
+
+.project:nth-child(2) div {
+ 	background: url(../images/projects/furia.png) no-repeat top center;
+ }
+
+.project:nth-child(3) div {
+ 	background: url(../images/projects/lailuminada.png) no-repeat top center;
+ }
+
+.project:nth-child(4) div {
+ 	background: url(../images/projects/anti.png) no-repeat top center;
+ }
+
+.project:nth-child(5) div {
+ 	background: url(../images/projects/guayabajam.png) no-repeat top left;
+ }

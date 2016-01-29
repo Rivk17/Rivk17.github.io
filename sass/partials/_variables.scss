@@ -1,0 +1,24 @@
+//
+// Variables
+//
+
+// Sprite
+$sprite-image: "../images/global-sprite";
+
+// Typography
+$mainFont:'Megrim', cursive;
+$secondFont:'Muli', sans-serif;
+
+// Colors
+$mainColor: #8B0000;
+$white: #F7F7F7;
+$black: #0F0E0E;
+
+// Neat variables
+$max-width: 1680px;
+$grid-colums: 13;
+
+// Breakpoints
+$desktop: 1000px;
+$tablet: 700px;
+$mobile-large: 500px;

@@ -1,0 +1,14 @@
+//
+// ABOUT ME STYLE
+//
+.about-me {
+	background-color: rgba(0,0,0,0.5);
+	@media (min-width: $desktop) {
+		padding-bottom: 200px;
+	}
+	.title {
+		@media (min-width: $desktop) {
+			float:right;
+		}
+	}
+}

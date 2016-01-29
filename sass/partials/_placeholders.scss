@@ -1,0 +1,34 @@
+//
+// Placeholders
+//
+
+%btns {
+	@include font-size(20);
+	border: 2px solid $white;
+	font-family: $mainFont;
+	color: $white;
+	padding: 10px;
+	transition:.5s;
+	@media (min-width: $desktop) {
+		&:hover {
+			border: 2px solid $mainColor;
+			color: $mainColor;
+			transition:.5s;
+		}
+	}
+		
+}
+
+%headlightners {
+	@include font-size(40);
+  	border: 3px solid $mainColor;
+  	height: 250px;
+  	margin: 0 auto 50px;
+  	padding: 10px;
+  	text-align: center;
+  	width: 240px;
+  	@media (min-width: $desktop) {
+    	@include font-size(85);
+    	border:none;
+  	}
+}

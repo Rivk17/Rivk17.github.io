@@ -1,0 +1,30 @@
+{
+	"projects":[
+	
+		{
+			"name":"Our Heritage",
+			"link":"pages/ourheritage.html"
+		},
+		
+		{
+			"name":"Furia Rosa",
+			"link":"pages/furia.html"
+		},
+
+		{
+			"name":"La iluminada",
+			"link":"pages/lailuminada.html"
+		},
+
+		{
+			"name":"Anti-Mute",
+			"link":"pages/anti.html"
+		},
+
+		{
+			
+			"name":"Guajaba Jam",
+			"link":"pages/guayabajam.html"
+		}
+	]
+}

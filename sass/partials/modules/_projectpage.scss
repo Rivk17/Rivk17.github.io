@@ -1,0 +1,92 @@
+//
+// rules for every project
+//
+.project-brief {
+	background-color: $black;
+	overflow: hidden;
+	padding: 50px 0;
+	text-align: center;
+  @media (min-width: $desktop) {
+    padding: 50px;
+    text-align: left;
+  }
+	a {
+		@extend %btns;
+		@include font-size(40);
+		@media (min-width: $desktop) {
+			float: right;
+			margin: -255px 70px 0 0;
+		}
+	}
+	p {
+		padding-bottom: 50px;
+	}
+	ul {
+		@include font-size(30);
+		font-family: $mainFont;
+		padding-bottom: 50px;
+		@media (min-width: $desktop) {
+			width: 90%;
+			float: left;
+		}
+		li {
+			color: $white; 
+		}
+	}
+}
+.gallery {
+	background-color: $black;
+	.title {
+		@media (min-width: $desktop) {
+			float: left;
+			position: fixed;
+		}
+	}
+}
+
+.gallery-overview {
+	margin: 0 auto;
+	text-align: center;
+	width: 90%;
+	@media (min-width: $desktop) {
+		float: right;
+		width: 65%
+	}
+	img {
+		height: 200px;
+		max-width: 300px;
+		width: 100%;
+		@media (min-width: $tablet) {
+			height: auto;
+			max-width: none;
+			margin: 10px 0;
+		}
+	}
+}
+//
+// background for each project
+//
+.guayabajam-welcome {
+	background: url(../images/projects/main-previews/guayabajam.png) no-repeat top center;
+	background-size: cover;
+}
+
+.anti-welcome {
+	background: url(../images/projects/main-previews/anti.png) no-repeat top center;
+	background-size: cover;
+}
+
+.furiarosa-welcome {
+	background: url(../images/projects/main-previews/furiarosa.png) no-repeat top center;
+	background-size: cover;
+}
+
+.lailuminada-welcome {
+	background: url(../images/projects/main-previews/lailuminada.png) no-repeat top center;
+	background-size: cover;
+}
+
+.ourheritage-welcome {
+	background: url(../images/projects/main-previews/ourheritage.png) no-repeat top center;
+	background-size: cover;
+}
